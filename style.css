@@ -6,8 +6,30 @@
     font-family: sans-serif;
 }
 
-div{
-    width: 400px;
-    height: 400px;
-    background-color: red;
+body{
+    background-image: url(images/back.png);
+    background-position: center;
 }
+
+
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border: 2px solid white;
+}
+
+
+section{
+    display: grid;
+    gap: 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+}
+

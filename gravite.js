@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('body').jGravity({
             target: 'everything',
             ignoreClass: 'ignoreMe',
-            weight: 25,
+            weight: 30,
             depth: 2,
             drag: true
         });

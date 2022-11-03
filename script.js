@@ -16,3 +16,9 @@ function Refresh(){
 if (document.getElementById("changeMe").innerHTML == "Refresh" && document.getElementById('changeMe').clicked == true) {
     document.location.reload();
 }}
+
+
+
+
+
+

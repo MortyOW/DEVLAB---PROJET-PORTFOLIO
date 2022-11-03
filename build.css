@@ -279,5 +279,68 @@ p {
     padding: 0.25em 0.75em;
   }
 }
+#adam {
+  background-image: url(images/adamsimon.jpg.png);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+#adam::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#adam .adam {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#adam h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+#adam h1:nth-child(1) {
+  animation-delay: 1s;
+}
+#adam h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+#adam h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#adam h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+#adam h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+#adam h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+#adam h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: blue;
+  animation: text_reval_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+/* End adam Section */
 
 /*# sourceMappingURL=build.css.map */

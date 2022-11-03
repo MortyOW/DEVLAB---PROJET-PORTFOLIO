@@ -327,12 +327,35 @@ p {
 			height: 100%;
 			width: 0;
 			background-color: blue;
-			animation: text_reval_box 1s ease; // Bug corrigé 
+			animation: text_reveal_box 1s ease; // Bug corrigé 
 			animation-delay: 0.5s;
 		}
 	}
 }
 
+
+// KeyFrames pour l'animation du prénom
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: blue;
+		font-weight: 500;
+	}
+}
 
 // Responsive
 @media only screen and (min-width: 1200px) {

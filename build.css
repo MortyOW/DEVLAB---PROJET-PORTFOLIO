@@ -253,32 +253,6 @@ p {
   left: 5px;
 }
 
-@media only screen and (min-width: 1200px) {
-  #header .hamburger {
-    display: none;
-  }
-  #header .navlist ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
-  #header .navlist ul li {
-    display: inline-block;
-  }
-  #header .navlist ul li a {
-    font-size: 1.8rem;
-  }
-  #header .navlist ul a:after {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .button-54 {
-    padding: 0.25em 0.75em;
-  }
-}
 #adam {
   background-image: url(images/adamsimon.jpg.png);
   background-size: cover;
@@ -337,10 +311,56 @@ p {
   height: 100%;
   width: 0;
   background-color: blue;
-  animation: text_reval_box 1s ease;
+  animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
 
-/* End adam Section */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: blue;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #header .hamburger {
+    display: none;
+  }
+  #header .navlist ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .navlist ul li {
+    display: inline-block;
+  }
+  #header .navlist ul li a {
+    font-size: 1.8rem;
+  }
+  #header .navlist ul a:after {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
 
 /*# sourceMappingURL=build.css.map */

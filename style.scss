@@ -263,39 +263,7 @@ p {
 	}
 }
 
-// Responsive
-@media only screen and (min-width: 1200px) {
-	#header {
-		.hamburger {
-			display: none;
-		}
-		.navlist {
-			ul {
-				position: initial;
-				display: block;
-				height: auto;
-				width: fit-content;
-				background-color: transparent;
-				li {
-					display: inline-block;
-					a {
-						font-size: 1.8rem;
-					}
-				}
-				a {
-					&:after {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-}
-@media (min-width: 768px) {
-	.button-54 {
-		padding: 0.25em 0.75em;
-	}
-}
+
 
 
 
@@ -359,12 +327,44 @@ p {
 			height: 100%;
 			width: 0;
 			background-color: blue;
-			animation: text_reval_box 1s ease;
+			animation: text_reval_box 1s ease; // Bug corrigé 
 			animation-delay: 0.5s;
 		}
 	}
 }
 
 
+// Responsive
+@media only screen and (min-width: 1200px) {
+	#header {
+		.hamburger {
+			display: none;
+		}
+		.navlist {
+			ul {
+				position: initial;
+				display: block;
+				height: auto;
+				width: fit-content;
+				background-color: transparent;
+				li {
+					display: inline-block;
+					a {
+						font-size: 1.8rem;
+					}
+				}
+				a {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.button-54 {
+		padding: 0.25em 0.75em;
+	}
+}
 
-/* End adam Section */

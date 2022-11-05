@@ -44,7 +44,7 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 	span {
-		color: blue;
+		color: rgb(105, 176, 13);
 	}
 }
 .cta {
@@ -52,7 +52,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid blue;
+	border: 2px solid rgb(105, 176, 13);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -61,7 +61,7 @@ p {
 	transition-property: background-color, color;
 	&:hover {
 		color: white;
-		background-color: blue;
+		background-color: rgb(105, 176, 13);
 	}
 }
 .marque {
@@ -70,7 +70,7 @@ p {
 		text-transform: uppercase;
 		color: white;
 		span {
-			color: blue;
+			color: rgb(105, 176, 13);
 		}
 	}
 }
@@ -140,7 +140,7 @@ p {
 							transform: translate(-50%, -50%) scale(1);
 							letter-spacing: initial;
 						}
-						color: blue;
+						color: rgb(105, 176, 13);
 					}
 				}
 			}
@@ -220,6 +220,15 @@ p {
 
 
 // Page Bonus Compétences (avec gravité)
+
+.competence_gravite{
+	background: rgb(208,91,91);
+	background: linear-gradient(90deg, rgba(208,91,91,1) 0%, rgba(113,20,20,1) 30%, rgba(0,0,0,1) 100%);	
+}
+
+
+
+
 .gravitation {
 	width: 200px;
 	height: 200px;
@@ -326,7 +335,7 @@ p {
 			left: 0;
 			height: 100%;
 			width: 0;
-			background-color: blue;
+			background-color: rgb(105, 176, 13);
 			animation: text_reveal_box 1s ease; // Bug corrigé 
 			animation-delay: 0.5s;
 		}
@@ -425,7 +434,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: blue;
+		color: rgb(105, 176, 13);
 		font-weight: 500;
 	}
 }
@@ -513,6 +522,49 @@ p {
 		}
 	}
 }
+
+
+
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	.footer {
+		min-height: 200px;
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
+	h2 {
+		color: white;
+		font-weight: 500;
+		font-size: 1.8rem;
+		letter-spacing: 0.1rem;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.social-icon {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.social-item {
+		height: 50px;
+		width: 50px;
+		margin: 0 5px;
+		img {
+			filter: grayscale(1);
+			transition: 0.3s ease filter;
+		}
+		&:hover {
+			img {
+				filter: grayscale(0);
+			}
+		}
+	}
+	p {
+		color: white;
+		font-size: 1.3rem;
+	}
+}
+
 
 
 

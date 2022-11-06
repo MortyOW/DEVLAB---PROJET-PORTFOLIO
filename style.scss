@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-//NavBar + Menu Burger et autres paramètres communs au site
+// Set Up général
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -48,6 +48,8 @@ p {
 		color: rgb(105, 176, 13);
 	}
 }
+
+// NavBar + CTA bannière
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
@@ -352,7 +354,7 @@ p {
 }
 
 
-
+ // Section Compétences
 #competences {
 	.competences {
 		flex-direction: column;
@@ -436,6 +438,7 @@ p {
 	}
 }
 
+// Section Projets
 #projects {
 	.projects {
 		flex-direction: column;
@@ -520,8 +523,7 @@ p {
 	}
 }
 
-
-
+// Footer
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	.footer {
@@ -564,7 +566,7 @@ p {
 
 
 
-
+// Container pour section contact
 .container2{
 	min-height: 80vh;
 	position: relative;
@@ -574,6 +576,7 @@ p {
 	padding: 20px 100px;
 }
 
+// Section Contact
 .contact-box{
 	max-width: 850px;
 	display: grid;
@@ -655,51 +658,10 @@ p {
 		}
 }
 
-
+// SEO Booster
 .nope{
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -731,13 +693,23 @@ p {
 		}
 	}
 }
+
+@media only screen and (min-width: 1200px) {
+	#competences {
+		.competence-bottom {
+			.itemCompetence {
+				flex-basis: 22%;
+				margin: 1.5%;
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.button-54 {
 		padding: 0.25em 0.75em;
 	}
 }
-
-
 
 @media screen and (max-width: 880px){
 	.contact-box{
@@ -747,7 +719,6 @@ p {
 		height: 200px;
 	}
 }
-
 
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -794,13 +765,3 @@ p {
 
 
 
-@media only screen and (min-width: 1200px) {
-	#competences {
-		.competence-bottom {
-			.itemCompetence {
-				flex-basis: 22%;
-				margin: 1.5%;
-			}
-		}
-	}
-}

@@ -517,6 +517,93 @@ p {
   font-size: 1.3rem;
 }
 
+.container2 {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.contact-box .left {
+  background: url(images/vroum.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.contact-box .right {
+  padding: 25px 40px;
+}
+.contact-box h2 {
+  color: white;
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+.contact-box h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #2ecc71;
+}
+.contact-box .field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.contact-box .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.contact-box textarea {
+  min-height: 150px;
+}
+.contact-box .btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-box .btn:hover {
+  background-color: #27ae60;
+}
+.contact-box .field:focus {
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  background-color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   #header .hamburger {
     display: none;
@@ -576,4 +663,4 @@ p {
   }
 }
 
-/*# sourceMappingURL=build.CSS.map */
+/*# sourceMappingURL=build.css.map */

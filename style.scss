@@ -376,7 +376,7 @@ p {
 	.itemCompetence {
 		flex-basis: 80%;
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		padding: 30px;
@@ -403,18 +403,11 @@ p {
 			text-transform: uppercase;
 		}
 		p {
-			color: white;
+			color: transparent;
 			text-align: left;
 		}
 	}
 }
-
-
-
-
-
-
-
 
 
 // KeyFrames pour l'animation du prénom
@@ -659,14 +652,28 @@ p {
 		}
 }
 
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -727,9 +734,14 @@ p {
 
 
 
-
-
-
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -776,3 +788,14 @@ p {
 }
 
 
+
+@media only screen and (min-width: 1200px) {
+	#competences {
+		.competence-bottom {
+			.itemCompetence {
+				flex-basis: 22%;
+				margin: 1.5%;
+			}
+		}
+	}
+}

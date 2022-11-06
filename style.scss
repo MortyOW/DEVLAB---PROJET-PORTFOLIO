@@ -303,7 +303,7 @@ p {
 		padding: 0 50px;
 		justify-content: flex-start;
 	}
-	h1 {
+	h2 {
 		display: block;
 		width: fit-content;
 		font-size: 4rem;
@@ -396,12 +396,7 @@ p {
 			opacity: 0.9;
 			z-index: -1;
 		}
-		h2 {
-			font-size: 2rem;
-			color: white;
-			margin-bottom: 10px;
-			text-transform: uppercase;
-		}
+
 		p {
 			color: transparent;
 			text-align: left;

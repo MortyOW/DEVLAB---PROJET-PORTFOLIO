@@ -281,7 +281,7 @@ p {
   padding: 0 50px;
   justify-content: flex-start;
 }
-#adam h1 {
+#adam h2 {
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -290,26 +290,26 @@ p {
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
 }
-#adam h1:nth-child(1) {
+#adam h2:nth-child(1) {
   animation-delay: 1s;
 }
-#adam h1:nth-child(1) span {
+#adam h2:nth-child(1) span {
   animation-delay: 0.5s;
 }
-#adam h1:nth-child(2) {
+#adam h2:nth-child(2) {
   animation-delay: 2s;
 }
-#adam h1:nth-child(2) span {
+#adam h2:nth-child(2) span {
   animation-delay: 1.5s;
 }
-#adam h1:nth-child(3) {
+#adam h2:nth-child(3) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
-#adam h1:nth-child(3) span {
+#adam h2:nth-child(3) span {
   animation-delay: 2.5s;
 }
-#adam h1 span {
+#adam h2 span {
   position: absolute;
   top: 0;
   left: 0;
@@ -370,12 +370,6 @@ p {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.9;
   z-index: -1;
-}
-#competences .itemCompetence h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
 }
 #competences .itemCompetence p {
   color: transparent;

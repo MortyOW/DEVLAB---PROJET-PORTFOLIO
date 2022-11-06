@@ -77,6 +77,14 @@ p {
 .marque h1 span {
   color: rgb(105, 176, 13);
 }
+.marque h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.marque h2 span {
+  color: rgb(105, 176, 13);
+}
 
 #header {
   position: fixed;

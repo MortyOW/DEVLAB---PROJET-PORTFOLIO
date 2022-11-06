@@ -2,7 +2,6 @@
 console.log('salut')
 
 function ChangeName() {
-    console.log('salut')
     if (document.getElementById("changeMe").innerHTML == "Clique") {
         document.getElementById("changeMe").innerHTML = "Refresh"
     } else if (document.getElementById("changeMe").innerHTML == "Refresh") {

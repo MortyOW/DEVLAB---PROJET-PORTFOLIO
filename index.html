@@ -24,9 +24,10 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#adam" data-after="Accueil">Accueil</a></li>
-            <li><a href="#competences" data-after="Competence">Compétences</a></li>
-            <li><a href="#projects" data-after="Projets">Projets</a></li>
+            <li><a data-after="Accueil" class="translate">Translate</a></li>
+            <li><a href="#adam" data-after="Accueil" class="TLAccueil">Accueil</a></li>
+            <li><a href="#competences" data-after="Competence" class="TLCompetences">Compétences</a></li>
+            <li><a href="#projects" data-after="Projets" class="TLProjets">Projets</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
@@ -38,10 +39,10 @@
   <section id="adam">
     <div class="adam container">
       <div>
-        <h1>Salut, <span></span></h1>
-        <h1>je suis <span></span></h1>
+        <h1 class="TLSalut">Salut, <span></span></h1>
+        <h1 class="TLJesuis">je suis <span></span></h1>
         <h1>Adam <span></span></h1>
-        <a href="#contact" type="button" class="cta">Un Projet?</a>
+        <a href="#contact" type="button" class="cta TLUnProjet">Un Projet?</a>
       </div>
     </div>
   </section>
@@ -51,8 +52,8 @@
    <section id="competences">
     <div class="competences container">
       <div class="competence-top">
-        <h1 class="section-title">Mes Compétences</h1>
-        <a href="competences.html" target="_blank">Cliquez ici pour voir mes compétences en action</a>
+        <h1 class="section-title TLMesCompetences">Mes Compétences</h1>
+        <a class="TLDemo" href="competences.html" target="_blank">Cliquez ici pour voir mes compétences en action</a>
       </div>
       <div class="competence-bottom">
         <div class="itemCompetence">
@@ -79,14 +80,14 @@
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title">Projets <span>Récents</span></h1>
+        <h1 class="section-title TLProjetsrecents">Projets <span>Récents</span></h1>
       </div>
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
             <a href="#">Inside</a>
-            <h2>Ma première année</h2>
-            <p>Pour pouvoir passer en 2ème année de Coding & Digital Innovation, j'ai dû réaliser un site web sur un projet de marketing fait auparavant. J'ai donc réalisé mon site sur un jeu de réalité virtuel.</p>
+            <h2 class="TLPremiereA">Ma première année</h2>
+            <p class="TLText1">Pour pouvoir passer en 2ème année de Coding & Digital Innovation, j'ai dû réaliser un site web sur un projet de marketing fait auparavant. J'ai donc réalisé mon site sur un jeu de réalité virtuel.</p>
           </div>
           <div class="project-img">
             <img src="images/inside" alt="img">
@@ -96,7 +97,7 @@
           <div class="project-info">
             <a href="#">DisneyLand Paris</a>
             <h2>SCSS</h2>
-            <p>A l'occasion de mon apprentissage du SCSS, j'ai dû réaliser un site web sur un lieu important et connu de Paris. J'ai donc choisi de le faire sur DisneyLand.</p>
+            <p class="TLText2">A l'occasion de mon apprentissage du SCSS, j'ai dû réaliser un site web sur un lieu important et connu de Paris. J'ai donc choisi de le faire sur DisneyLand.</p>
           </div>
           <div class="project-img">
             <img src="images/disneyland.PNG" alt="img">
@@ -105,8 +106,8 @@
         <div class="project-item">
           <div class="project-info">
             <a href="#">Camembert Man</a>
-            <h2>Un Projet JV</h2>
-            <p>Avant avoir commencé mes études de Coding et Digital Innovation, j'ai passé une année à Rubika en Game Design pendant laquelle j'ai eu l'occasion de réaliser un jeu de plateforme en C# .</p>
+            <h2 class="TLJv">Un Projet JV</h2>
+            <p class="TLText3">Avant avoir commencé mes études de Coding et Digital Innovation, j'ai passé une année à Rubika en Game Design pendant laquelle j'ai eu l'occasion de réaliser un jeu de plateforme en C# .</p>
           </div>
           <div class="project-img">
             <img src="images/camembertman" alt="img">
@@ -122,46 +123,23 @@
       <div class="contact-box">
         <div class="left"></div>
         <div class="right">
-          <h2>Contactez-moi</h2>
+          <h2 class="TLForm">Contactez-moi</h2>
           <input type="text" class="field" placeholder="Votre Nom Complet">
           <input type="text" class="field" placeholder="Votre Adresse-email">
           <input type="text" class="field" placeholder="Votre numéro de téléphone">
           <textarea class="field" placeholder="De quoi avez-vous besoin?" ></textarea>
-          <button class="btn" onClick="window.location.reload();">Envoyer</button>
+          <button class="btn TLEnvoyer" onClick="window.location.reload();">Envoyer</button>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <section id="footer">
     <div class="footer container">
       <div class="marque">
         <h1><span>A</span>dam <span>S</span>imon</h1>
       </div>
-      <h2>Retrouvez-moi sur mes réseaux</h2>
+      <h2 class="TLFooter">Retrouvez-moi sur mes réseaux</h2>
       <div class="social-icon">
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/fluency/48/null/instagram-new.png" target="_blank"/></a>
